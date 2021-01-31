@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/gavial/static/css/main.183ae124.chunk.css",
+    "main.js": "/gavial/static/js/main.816d3f1b.chunk.js",
+    "main.js.map": "/gavial/static/js/main.816d3f1b.chunk.js.map",
+    "runtime-main.js": "/gavial/static/js/runtime-main.0052d2af.js",
+    "runtime-main.js.map": "/gavial/static/js/runtime-main.0052d2af.js.map",
+    "static/js/2.d95f7b02.chunk.js": "/gavial/static/js/2.d95f7b02.chunk.js",
+    "static/js/2.d95f7b02.chunk.js.map": "/gavial/static/js/2.d95f7b02.chunk.js.map",
+    "static/js/3.c579feba.chunk.js": "/gavial/static/js/3.c579feba.chunk.js",
+    "static/js/3.c579feba.chunk.js.map": "/gavial/static/js/3.c579feba.chunk.js.map",
+    "index.html": "/gavial/index.html",
+    "static/css/main.183ae124.chunk.css.map": "/gavial/static/css/main.183ae124.chunk.css.map",
+    "static/js/2.d95f7b02.chunk.js.LICENSE.txt": "/gavial/static/js/2.d95f7b02.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/gavial/static/media/logo-large.bcef5cdb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0052d2af.js",
+    "static/js/2.d95f7b02.chunk.js",
+    "static/css/main.183ae124.chunk.css",
+    "static/js/main.816d3f1b.chunk.js"
+  ]
+}
