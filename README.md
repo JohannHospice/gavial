@@ -1,6 +1,6 @@
 # Gavial : Un weeb de crawler 🐊
 
-![](docs/presentation.gif)
+[![](docs/presentation.gif)](https://johannhospice.github.io/gavial/)
 
 Gavial est une alternative permettant de lire des scans de Manga en faisant primer l'efficacité et le minimalisme.
 
