@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -35,4 +36,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.loginButton {
+  outline: none !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+  background: #CC2C21;
+  color: white;
+  transition: .25s background ease-in-out;
+  padding: 12px 22px;
+}
+
+.loginButton:hover,
+.loginButton:focus,
+.loginButton:active {
+  background: #FFF;
+}
+
+
+.form-control {
+  transition: .25s border ease-in-out;
+  border-radius: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent;
+  color: white;
+  border: 0;
+  border-bottom: 2px solid #444;
+  font-size: 20px;
+  margin-left: 8px
+}
+
+.form-control:focus {
+  border-bottom-color: #CC2C21;
 }

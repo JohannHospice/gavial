@@ -1,0 +1,27 @@
+
+.Reader-content {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Reader-wrapper {
+    flex-direction: row-reverse;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 2000px;
+}
+.Reader-page {
+    height: 100vh;
+    padding-bottom: 58px;
+    background: white;
+}
+.Reader-couple {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    max-width: 100%;
+    height: 100vh;
+}
