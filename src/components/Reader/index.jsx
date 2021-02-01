@@ -76,6 +76,7 @@ function Reader({ links }) {
   }, [handleUserKeyPress]);
 
   useEffect(() => {
+    // if (links && links.length != 46) links.pop();
     setIndex(0);
   }, [links]);
 
@@ -122,7 +123,7 @@ function Reader({ links }) {
       >
         <IconButton
           color="secondary"
-          disabled={index >= links.length + 1}
+          disabled={!(index < links.length - 1)}
           onClick={nextPage}
         >
           <ChevronRightIcon fontSize="large" />
@@ -144,7 +145,7 @@ function Reader({ links }) {
       </Box>
 
       {links &&
-        links.map((link, i) => (
+        links.map((link, i, { length }) => (
           <Grid
             style={{
               display: index === i || index === i + 1 ? "flex" : "none",
@@ -152,7 +153,7 @@ function Reader({ links }) {
             }}
             container
             item
-            xs={6}
+            xs={i === 0 || i === length - 1 ? 12 : 6}
             justify={i % 2 && "flex-end"}
             display="flex"
           >
@@ -162,16 +163,16 @@ function Reader({ links }) {
                 background: `url(${link}) no-repeat center`,
                 backgroundSize: "contain",
                 width: "100%",
-                backgroundPositionX: i % 2 ? "right" : "left",
+                backgroundPositionX:
+                  i === 0 || i === length - 1
+                    ? "center"
+                    : i % 2
+                    ? "right"
+                    : "left",
+                // backgroundBlendMode: "lighten",
+                // backgroundColor: "#303030",
               }}
-            >
-              {/* <img
-                src={link}
-                alt="page 1"
-                key={i}
-                style={{ maxHeight: "100vh", maxWidth: "49vw" }}
-              /> */}
-            </Box>
+            ></Box>
           </Grid>
         ))}
     </Grid>
